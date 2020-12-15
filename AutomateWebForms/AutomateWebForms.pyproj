@@ -38,10 +38,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Browsers\" />
+    <Folder Include="Exports\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Browsers\chromedriver.exe" />
     <Content Include="chromedriver.exe" />
+    <Content Include="Exports\CouponAutomation.xls" />
+    <Content Include="requirements.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

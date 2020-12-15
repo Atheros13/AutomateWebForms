@@ -3,6 +3,12 @@ from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.keys import Keys
 
+# open and import all Wilsons Coupon Data
+
+
+
+
+# open coupon site and log in
 driver = webdriver.Chrome(ChromeDriverManager().install())
 
 driver.maximize_window()  
@@ -13,6 +19,8 @@ time.sleep(0.9)
 driver.find_element_by_id("txtLoginPassword").send_keys("Wil$ons")
 time.sleep(0.9)
 driver.find_element_by_class_name('btn').click()
+
+# run loop for automating
 time.sleep(0.9)
 driver.find_element_by_id("input1726").send_keys("Michael")
 time.sleep(0.9)
