@@ -12,6 +12,7 @@
     <Name>AutomateWebForms</Name>
     <RootNamespace>AutomateWebForms</RootNamespace>
     <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+    <SuppressPackageInstallationPrompt>True</SuppressPackageInstallationPrompt>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -24,6 +25,21 @@
   <ItemGroup>
     <Compile Include="438_DVS.py" />
     <Compile Include="847_Wilsons.py" />
+    <Compile Include="send_email.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Browsers\" />
+    <Folder Include="Exports\" />
+    <Folder Include="NewFolder1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="847_Wilsons.spec" />
+    <Content Include="Browsers\chromedriver.exe" />
+    <Content Include="chromedriver.exe" />
+    <Content Include="Exports\CouponAutomation.xls" />
+    <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">
@@ -35,16 +51,6 @@
       <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
       <Architecture>X64</Architecture>
     </Interpreter>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Browsers\" />
-    <Folder Include="Exports\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Browsers\chromedriver.exe" />
-    <Content Include="chromedriver.exe" />
-    <Content Include="Exports\CouponAutomation.xls" />
-    <Content Include="requirements.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
