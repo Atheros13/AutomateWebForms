@@ -6,7 +6,7 @@ import shutil
 
 # open and import all Wilsons Coupon Data
 import xlrd
-sheet = xlrd.open_workbook("G:\Customer Reporting\847 - Wilsons\Coupon Automation\CouponAutomation.xls").sheet_by_index(0)
+sheet = xlrd.open_workbook("CouponAutomation.xls").sheet_by_index(0)
 
 # open coupon site and log in
 driver = webdriver.Chrome(ChromeDriverManager().install())
@@ -77,14 +77,16 @@ for r in range(1, sheet.nrows-2):
     driver.find_element_by_id("input1734").send_keys(email_body)
     driver.find_element_by_id("input1735").send_keys(reference)
     time.sleep(0.9)
-    driver.find_element_by_class_name("action-submit").click()
+    #driver.find_element_by_class_name("action-submit").click()
     time.sleep(0.9)    
-    driver.find_element_by_id("input1737").click()
+    #driver.find_element_by_id("input1737").click()
     
     #
     coupon_count += 1
 
 ## SEND JOHN EMAIL
+
+sys.exit(0)
 
 import smtplib
 import ssl

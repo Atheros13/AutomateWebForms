@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>4cdeda7c-4d18-4d20-8f1e-251c04a52e66</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>438_DVS.py</StartupFile>
+    <StartupFile>847_Wilsons.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -23,7 +23,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="438_DVS.py" />
+    <Compile Include="438 - DVS\438_DVS.py" />
     <Compile Include="847_Wilsons.py" />
     <Compile Include="send_email.py">
       <SubType>Code</SubType>
@@ -32,12 +32,14 @@
   <ItemGroup>
     <Folder Include="Browsers\" />
     <Folder Include="Exports\" />
-    <Folder Include="NewFolder1\" />
+    <Folder Include="438 - DVS\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="438 - DVS\chromedriver.exe" />
     <Content Include="847_Wilsons.spec" />
     <Content Include="Browsers\chromedriver.exe" />
     <Content Include="chromedriver.exe" />
+    <Content Include="CouponAutomation.xls" />
     <Content Include="Exports\CouponAutomation.xls" />
     <Content Include="requirements.txt" />
   </ItemGroup>
